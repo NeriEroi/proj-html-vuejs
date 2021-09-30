@@ -1,36 +1,103 @@
 <template>
   <header>
-    <!-- <img src="../assets/images/driving_preview.jpg" alt=""> -->
 
-    <div class="sub_header">
+    <!-- sub header -->
+      <div class="sub_header">
 
-      <section>
-        <h5>
-          We have a 95% Succssful Pass Rate!
-        </h5>
-      </section>
+        <div class="sub_header_wrap">
 
-      <section>
-        <h5>
-          <i class="fas fa-phone"></i>
-          Give us a call to book your tuition! 1-800-555-555
-        </h5>
-      </section>
+          <section>
+            <h5>
+              We have a 95% Succssful Pass Rate!
+            </h5>
+          </section>
+
+          <section>
+            <h5>
+              <i class="fas fa-phone"></i>
+              Give us a call to book your tuition! 1-800-555-555
+            </h5>
+          </section>
+
+        </div>
+
+      </div>
+    <!-- / sub header -->
+
+    <!-- nav  -->
+      <nav>
+        
+        <div class="nav_wrap">
+
+          <div class="logo_cont">
+
+            <img src="../assets/images/avada-drivers-logo-1x.png" alt="avada drivers logo">
+
+          </div>
+
+          <ul>
+            <li v-for="(headerLink, index) in headerLinks" :key="index">
+              <a :class="(headerLink.status) ? 'new' : null" href="#">
+                {{ headerLink.text }}
+              </a>
+            </li>
+
+            <li class="book_now">
+                BOOK NOW
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>      
+    <!-- / nav  -->
+
+    <div class="text_cont">
+
+      <h1>
+        DRIVE WITH AVADA
+      </h1>
+
+      <p>
+        We offer the finest 
+      </p>
 
     </div>
 
-    <ul>
-      <li v-for="(headerLink, index) in headerLinks" :key="index">
-        <a :class="(headerLink.status) ? 'new' : null" href="#">
-          {{ headerLink.text }}
-        </a>
-      </li>
+    <div class="details_cont">
 
-      <li>
-          BOOK NOW
-      </li>
-    </ul>
-    
+      <div class="demos_cont">
+
+        <i class="far fa-folder-open"></i>
+
+        <p>
+          Demos
+        </p>
+
+      </div>
+
+      <div class="sale_cont">
+
+        <div class="price">
+
+          <div class="dollar_symbol">
+
+            <i class="fas fa-dollar-sign"></i>
+
+            <span>39</span>
+
+          </div>
+
+        </div>
+
+        <p>
+          On Sale
+        </p>
+
+      </div>
+
+    </div>
+
   </header>
 </template>
 
@@ -41,27 +108,27 @@ export default {
       return {
         headerLinks: [
           {
-            text: "home",
+            text: "HOME",
             status: false
           },
           {
-            text: "about",
+            text: "ABOUT",
             status: false
           },
           {
-            text: "prices",
+            text: "PRICES",
             status: false
           },
           {
-            text: "courses",
+            text: "COURSES",
             status: true
           },
           {
-            text: "locations",
+            text: "LOCATIONS",
             status: false
           },
           {
-            text: "blog",
+            text: "BLOG",
             status: false
           },
         ]
@@ -77,11 +144,21 @@ export default {
 
 header {
   width: 100%;
+  position: relative;
 
   .sub_header {
+    width: 100%;
     height: 35px;
     background-color: $headergray;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sub_header_wrap {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
 
     section {
       height: 100%;
@@ -103,16 +180,156 @@ header {
     }
   }
 
-  ul {
-    li a {
-      color: lime;
-      text-decoration: none;
+  nav {
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../assets/images/driving_preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .nav_wrap {
+      width: 100%;
+      height: 130px;
+      background-color: $headergray;
+      opacity: 0.7;
+      display: flex;
+      justify-content: space-between;
+    }
 
-      .new::after {
-      width: 10px;
-      height: 10px;
-      background-color: lime;
-      content: "new";
+    .logo_cont {
+      width: calc(100% / 2);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul {
+      display: flex;
+      width: calc(100% / 2);
+      display: flex;
+      align-items: center;
+
+      li {
+        height: 20px;
+        list-style-type: none;
+        padding: 15px;
+        font-size: 12px;
+        color: white;
+        cursor: pointer;
+
+        :hover {
+          color: $lightgreen;
+          border-bottom: 2px solid $lightgreen;
+          padding-bottom: 10px;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 12px;
+        }
+
+        .new::after {
+          padding: 1px 8px;
+          background-color: $lightgreen;
+          border-radius: 10px;
+          content: "new";
+          color: white;
+        }
+      }
+
+      .book_now {
+        height: 30px;
+        padding: 5px 15px;
+        margin-bottom: -20px;
+        border-radius: 10px;
+        background-color: $lightgreen;
+      }
+    }
+  }
+
+  .text_cont {
+    position: absolute;
+    left: 16%;
+    bottom: 35%;
+    color: white;
+    font-size: 25px;
+  }
+
+  .details_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 27%;
+    z-index: 999;
+
+    .demos_cont {
+      width: 70px;
+      height: 70px;
+      margin-top: 10px;
+      margin-right: 10px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      i {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 900;
+        color: rgba(20, 20, 240, 0.979);
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 900;
+      }
+    }
+
+    .sale_cont {
+      width: 70px;
+      height: 70px;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .price {
+        display: flex;
+        font-weight: 900;
+        color: green;
+
+        .dollar_symbol {
+          font-size: 20px;
+          margin-bottom: -11px;
+
+          i {
+            font-size: 13px;
+            vertical-align: text-top;
+          }
+
+          span {
+            font-size: 30px;
+            font-weight: 900;
+          }
+        }
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 900;
       }
     }
   }
