@@ -2,17 +2,17 @@
   <header>
     <!-- <img src="../assets/images/driving_preview.jpg" alt=""> -->
 
-    <ul v-for="(headerLink, index) in headerLinks" :key="index">
+    <ul>
+      <li v-for="(headerLink, index) in headerLinks" :key="index">
+        <a :class="(headerLink.status) ? 'new' : null" href="#">
+          {{ headerLink.text }}
+        </a>
+      </li>
+
       <li>
-        {{ headerLink.text }}
+          BOOK NOW
       </li>
     </ul>
-
-    <div class="button_cont">
-      <div class="button">
-        BOOK KNOW
-      </div>
-    </div>
     
   </header>
 </template>
@@ -24,22 +24,28 @@ export default {
       return {
         headerLinks: [
           {
-            text: "home"
+            text: "home",
+            status: false
           },
           {
-            text: "about"
+            text: "about",
+            status: false
           },
           {
-            text: "prices"
+            text: "prices",
+            status: false
           },
           {
-            text: "courses"
+            text: "courses",
+            status: true
           },
           {
-            text: "locations"
+            text: "locations",
+            status: false
           },
           {
-            text: "blog"
+            text: "blog",
+            status: false
           },
         ]
       }
@@ -50,5 +56,16 @@ export default {
 <style scoped lang="scss">
 @import "../style/generals";
 @import "../style/vars";
+
+header {
+  ul {
+    li .new::after {
+      width: 10px;
+      height: 10px;
+      background-color: lime;
+      content: "new";
+    }
+  }
+}
 
 </style>
