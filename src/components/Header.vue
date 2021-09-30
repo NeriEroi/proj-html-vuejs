@@ -4,48 +4,48 @@
     <!-- sub header -->
       <div class="sub_header">
 
-        <div class="sub_header_wrap">
+        <section>
+          <h5>
+            We have a 95% Succssful Pass Rate!
+          </h5>
+        </section>
 
-          <section>
-            <h5>
-              We have a 95% Succssful Pass Rate!
-            </h5>
-          </section>
-
-          <section>
-            <h5>
-              <i class="fas fa-phone"></i>
-              Give us a call to book your tuition! 1-800-555-555
-            </h5>
-          </section>
-
-        </div>
+        <section>
+          <h5>
+            <i class="fas fa-phone"></i>
+            Give us a call to book your tuition! 1-800-555-555
+          </h5>
+        </section>
 
       </div>
     <!-- / sub header -->
 
     <!-- nav  -->
       <nav>
-        
-        <div class="nav_wrap">
 
-          <div class="logo_cont">
+        <div class="opacity">
 
-            <img src="../assets/images/avada-drivers-logo-1x.png" alt="avada drivers logo">
+          <div class="nav_wrap">
+
+            <div class="logo_cont">
+
+              <img src="../assets/images/avada-drivers-logo-1x.png" alt="avada drivers logo">
+
+            </div>
+
+            <ul>
+              <li v-for="(headerLink, index) in headerLinks" :key="index">
+                <a :class="(headerLink.status) ? 'new' : null" href="#">
+                  {{ headerLink.text }}
+                </a>
+              </li>
+
+              <li class="book_now">
+                  BOOK NOW
+              </li>
+            </ul>
 
           </div>
-
-          <ul>
-            <li v-for="(headerLink, index) in headerLinks" :key="index">
-              <a :class="(headerLink.status) ? 'new' : null" href="#">
-                {{ headerLink.text }}
-              </a>
-            </li>
-
-            <li class="book_now">
-                BOOK NOW
-            </li>
-          </ul>
 
         </div>
 
@@ -145,30 +145,18 @@ export default {
 header {
   width: 100%;
   position: relative;
+  background-color: $headergray;
 
   .sub_header {
-    width: 100%;
+    width: 75%;
     height: 35px;
-    background-color: $headergray;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    .sub_header_wrap {
-      width: 80%;
-      display: flex;
-      justify-content: space-between;
-    }
-
     section {
-      height: 100%;
-      width: calc(100% / 2);
-      // background-color: magenta;
-      // border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      
       h5 {
         color: $gray;
         font-size: 10px;
@@ -181,79 +169,80 @@ header {
   }
 
   nav {
+    width: 100%;
     height: 490px;
-    display: flex;
-    justify-content: center;
     background-image: url("../assets/images/driving_preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
-    .nav_wrap {
+
+    .opacity {
       width: 100%;
-      height: 130px;
       background-color: $headergray;
       opacity: 0.7;
-      display: flex;
-      justify-content: space-between;
-    }
 
-    .logo_cont {
-      width: calc(100% / 2);
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .nav_wrap {
+        width: 76%;
+        height: 130px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
 
-    ul {
-      display: flex;
-      width: calc(100% / 2);
-      display: flex;
-      align-items: center;
-
-      li {
-        height: 20px;
-        list-style-type: none;
-        padding: 15px;
-        font-size: 12px;
-        color: white;
-        cursor: pointer;
-
-        :hover {
-          color: $lightgreen;
-          border-bottom: 2px solid $lightgreen;
-          padding-bottom: 10px;
+        .logo_cont {
+          padding: 10px;
+          display: flex;
+          align-items: center;
         }
 
-        a {
-          color: white;
-          text-decoration: none;
-          font-size: 12px;
-        }
+        ul {
+          display: flex;
+          align-items: center;
 
-        .new::after {
-          padding: 1px 8px;
-          background-color: $lightgreen;
-          border-radius: 10px;
-          content: "new";
-          color: white;
-        }
-      }
+          li {
+            height: 20px;
+            list-style-type: none;
+            padding: 15px;
+            font-size: 12px;
+            color: white;
+            cursor: pointer;
 
-      .book_now {
-        height: 30px;
-        padding: 5px 15px;
-        margin-bottom: -20px;
-        border-radius: 10px;
-        background-color: $lightgreen;
+            :hover {
+              color: $lightgreen;
+              border-bottom: 2px solid $lightgreen;
+              padding-bottom: 10px;
+            }
+
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 12px;
+            }
+
+            .new::after {
+              padding: 1px 8px;
+              background-color: $lightgreen;
+              border-radius: 10px;
+              content: "new";
+              color: white;
+            }
+          }
+
+          .book_now {
+            height: 30px;
+            padding: 5px 15px;
+            margin-bottom: -20px;
+            border-radius: 10px;
+            background-color: $lightgreen;
+            color: white;
+          }
+        }
       }
     }
   }
 
   .text_cont {
     position: absolute;
-    left: 16%;
-    bottom: 35%;
+    left: 13%;
+    bottom: 14%;
     color: white;
     font-size: 25px;
   }
