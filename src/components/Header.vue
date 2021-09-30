@@ -21,11 +21,11 @@
     <!-- / sub header -->
 
     <!-- nav  -->
-      <nav>
+      <div id="nav_line">
 
         <div class="opacity">
 
-          <div class="nav_wrap">
+          <nav>
 
             <div class="logo_cont">
 
@@ -45,11 +45,11 @@
               </li>
             </ul>
 
-          </div>
+          </nav>
 
         </div>
 
-      </nav>      
+      </div>      
     <!-- / nav  -->
 
     <div class="text_cont">
@@ -168,7 +168,7 @@ header {
     }
   }
 
-  nav {
+  #nav_line {
     width: 100%;
     height: 490px;
     background-image: url("../assets/images/driving_preview.jpg");
@@ -180,7 +180,7 @@ header {
       background-color: $headergray;
       opacity: 0.7;
 
-      .nav_wrap {
+      nav {
         width: 76%;
         height: 130px;
         margin: auto;
