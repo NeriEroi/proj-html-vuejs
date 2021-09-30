@@ -1,5 +1,7 @@
 <template>
   <header>
+    <!-- <img src="../assets/images/driving_preview.jpg" alt=""> -->
+
       
   </header>
 </template>
@@ -11,5 +13,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/generals";
+@import "../style/vars";
 
 </style>
