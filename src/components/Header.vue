@@ -68,7 +68,7 @@
 
       <div class="demos_cont">
 
-        <i class="far fa-folder-open"></i>
+        <i class="fab fa-accusoft"></i>
 
         <p>
           Demos
