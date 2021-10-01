@@ -97,9 +97,71 @@
 
         </div>
 
+        <!-- COMMERCIAL BOTTOM  -->
         <div class="commercial_bottom">
-          
+
+          <div class="commercial_bottom_wrap">
+
+            <div class="information_course">
+
+            </div>
+
+            <div class="learn_more">
+
+              <div class="item">
+
+                <div class="item_square">
+
+                </div>
+
+                <h5>
+                  Pass Plus
+                </h5>
+
+                <div class="button">
+                  LEARN MORE
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item_square">
+
+                </div>
+
+                <h5>
+                  Pass Plus
+                </h5>
+
+                <div class="button">
+                  LEARN MORE
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item_square">
+
+                </div>
+
+                <h5>
+                  Pass Plus
+                </h5>
+
+                <div class="button">
+                  LEARN MORE
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+        <!-- COMMERCIAL BOTTOM  -->
 
       </section>
       <!-- / SECTION COMMERCIAL  -->
@@ -236,16 +298,78 @@ section.commercial {
 
   .commercial_top {
     width: 100%;
-    height: 100%;
+    height: 165px;
 
     .commercial_top_wrap {
       width: 60%;
-      height: 165px;
+      height: 100%;
       margin: auto;
       background-color: mediumblue;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+
+  .commercial_bottom {
+    width: 100%;
+    height: 335px;
+    background-color: mediumturquoise;
+
+    .commercial_bottom_wrap {
+      width: 60%;
+      height: 100%;
+      margin: auto;
+      background-color: mediumvioletred;
+      display: flex;
+      justify-content: space-between;
+
+      .information_course {
+        width: 30%;
+        height: 80%;
+        border-radius: 8px;
+        background-color: white;
+        position: relative;
+        bottom: 5%;
+      }
+
+      .learn_more {
+        width: 65%;
+        height: 100%;
+        background-color: peru;
+        display: flex;
+
+        .item {
+          width: 150px;
+          height: 270px;
+          margin: 25px;
+          background-color: rgb(0, 255, 64);
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          // justify-content: center;
+          align-items: center;
+
+          .item_square {
+            width: 90%;
+            height: 130px;
+            background-color: red;
+            border: 1px solid black;
+          }
+
+          h5 {
+            margin: 10px;
+            color: $headergray;
+          }
+
+          .button {
+            padding: 3px 8px;
+            border: 2px solid $headergray;
+            border-radius: 20px;
+            font-size: 10px;
+          }
+        }
+      }
     }
   }
 }
