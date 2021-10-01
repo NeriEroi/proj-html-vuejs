@@ -261,6 +261,7 @@ export default {
 
   ul li {
     display: flex;
+    color: $gray;
 
     i {
       margin-top: 4px;
