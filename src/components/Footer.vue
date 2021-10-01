@@ -36,9 +36,9 @@
 
               <i :class="contactDetail.icon"></i>
 
-              <p>
+              <span>
                 {{ contactDetail.text }}
-              </p>
+              </span>
                
             </li>
 
@@ -169,13 +169,20 @@ export default {
 .footer_top {
   width: 100%;
   height: 380px;
-  background-color: rgb(55, 0, 255);
+  // background-color: rgb(55, 0, 255);
+  background-image: url("../assets/images/footer-background-color.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .box section {
     width: calc(100% / 4);
     height: 100%;
-    background-color: rgb(0, 255, 21);
+    // background-color: rgb(0, 255, 21);
     border: 1px solid black;
+
+    ul li {
+      list-style-type: none;
+    }
 
     .discount_cont {
       width: 210px;
@@ -202,20 +209,42 @@ export default {
 .footer_bottom {
   width: 100%;
   height: 120px;
-  background-color: rgb(55, 0, 255);
+  // background-color: rgb(55, 0, 255);
+  background-color: $footer;
 
   .box section {
     width: calc(100% / 2);
     height: 100%;
-    background-color: rgb(255, 0, 0);
-    border: 1px solid black;
+    // background-color: rgb(255, 0, 0);
+    // border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      font-size: 11px;
+      color: $gray;
+
+      i {
+        color: $gray;
+      }
+
+      span {
+        color: $darklightgreen;
+      }
+    }
+
+    i {
+      margin: 5px;
+      color: white;
+    }
   }
 }
 .box {
   width: 75%;
   height: 100%;
   margin: auto;
-  background-color: darkolivegreen;
+  // background-color: darkolivegreen;
   display: flex;
 }
 
