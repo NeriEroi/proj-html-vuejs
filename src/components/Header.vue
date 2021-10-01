@@ -109,7 +109,7 @@ export default {
         headerLinks: [
           {
             text: "HOME",
-            status: false
+            status: false,
           },
           {
             text: "ABOUT",
@@ -268,6 +268,7 @@ header {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 0 3px $darklightgreen, 0 0 5px $lightgreen;
 
       i {
         margin-top: 20px;
@@ -294,6 +295,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      box-shadow: 0 0 3px $darklightgreen, 0 0 5px $lightgreen;
 
       .price {
         display: flex;
