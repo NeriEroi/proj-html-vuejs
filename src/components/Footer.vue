@@ -41,7 +41,8 @@
           <ul>
 
             <li v-for="(course, index) in courses" :key="index">
-                {{ course.icon }} {{ course.text }}
+              <i class="far fa-arrow-alt-circle-right"></i>
+              {{ course.text }}
             </li>
 
           </ul>
