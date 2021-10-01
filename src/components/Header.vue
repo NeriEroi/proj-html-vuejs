@@ -170,7 +170,7 @@ header {
 
   #nav_line {
     width: 100%;
-    height: 490px;
+    height: 487px;
     background-image: url("../assets/images/driving_preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ header {
   .text_cont {
     position: absolute;
     left: 13%;
-    bottom: 15%;
+    bottom: 14%;
     color: white;
     font-size: 25px;
   }
