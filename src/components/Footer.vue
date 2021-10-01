@@ -23,13 +23,29 @@
 
         </section>
 
+        <!-- CONTACT DETAILS  -->
         <section>
 
           <h1>
             CONTACT DETAILS
           </h1>
 
+          <ul>
+
+            <li v-for="(contactDetail, index) in contactDetails" :key="index">
+
+              <i :class="contactDetail.icon"></i>
+
+              <p>
+                {{ contactDetail.text }}
+              </p>
+               
+            </li>
+
+          </ul>
+
         </section>
+        <!-- / CONTACT DETAILS  -->
 
         <!-- COURSES -->
         <section>
@@ -104,6 +120,24 @@ export default {
     name: 'Footer',
     data() {
       return {
+        contactDetails: [
+          {
+            icon: "fas fa-home",
+            text: "12345 North Main Street, New York, NY 555555"
+          },
+          {
+            icon: "fas fa-phone",
+            text: "1.800.555.6789"
+          },
+          {
+            icon: "fas fa-envelope",
+            text: "info@your-domain.com"
+          },
+          {
+            icon: "fas fa-link",
+            text: "Theme-Fusion.com"
+          },
+        ],
         courses: [
           {
             icon: "far fa-arrow-alt-circle-right",
