@@ -242,7 +242,7 @@ header {
   .text_cont {
     position: absolute;
     left: 13%;
-    bottom: 14%;
+    bottom: 15%;
     color: white;
     font-size: 25px;
   }
