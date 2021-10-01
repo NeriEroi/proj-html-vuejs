@@ -4,6 +4,8 @@
     <Header />
 
     <main>
+
+      <!-- SECTION REQUEST  -->
       <section class="request">
 
         <div class="request_wrap">
@@ -62,6 +64,45 @@
         </div>
 
       </section>
+      <!-- / SECTION REQUEST  -->
+
+      <!-- SECTION COMMERCIAL  -->
+      <section class="commercial">
+
+        <div class="commercial_top">
+
+          <div class="commercial_top_wrap">
+
+            <div class="text_wrap">
+
+              <h1>
+                Start Learning to Drive Today
+              </h1>
+
+              <p>
+                Give us a call to schedule your first driving lesson 
+              </p>
+
+            </div>
+
+            <div class="number">
+
+              <i class="fas fa-phone"></i>
+
+              <span>1-800-555-555</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="commercial_bottom">
+          
+        </div>
+
+      </section>
+      <!-- / SECTION COMMERCIAL  -->
     </main>
 
     <Footer />
@@ -86,9 +127,11 @@ export default {
 @import "./style/generals";
 @import "./style/vars";
 
-.request {
+// SECTION REQUEST 
+section.request {
   width: 100%;
   height: 500px;
+  margin-bottom: 30px;
   // background-color: green;
 
   .request_wrap {
@@ -183,5 +226,29 @@ export default {
     }
   }
 }
+// / SECTION REQUEST
 
+// SECTION COURSES
+section.commercial {
+  width: 100%;
+  height: 500px;
+  background-color: lawngreen;
+
+  .commercial_top {
+    width: 100%;
+    height: 100%;
+
+    .commercial_top_wrap {
+      width: 60%;
+      height: 165px;
+      margin: auto;
+      background-color: mediumblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+// / SECTION COURSES
 </style>
