@@ -148,14 +148,14 @@ export default {
         }
 
         p {
-          margin-top: 10px;
+          margin-top: 25px;
           margin-bottom: 5px;
-          font-size: 13px;
+          font-size: 10px;
           color: $gray;
         }
 
         span {
-          font-size: 13px;
+          font-size: 10px;
           color: $gray;
         }
 
