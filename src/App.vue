@@ -104,6 +104,30 @@
 
             <div class="information_course">
 
+              <div class="triangle">
+            
+              </div>
+
+              <h3>
+                NEW
+              </h3>
+
+              <div class="all_info">
+
+                <h2>
+                  Courses
+                </h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit, sit amet consectetur elit. 
+                  Voluptatesquis ut reiciendis animi repudiandae in velit?
+                </p>
+
+                <div class="button">
+                  COURSE INFORMATION
+                </div>
+              </div>
+
             </div>
 
             <div class="learn_more">
@@ -131,7 +155,7 @@
                 </div>
 
                 <h5>
-                  Pass Plus
+                  Intensive Course
                 </h5>
 
                 <div class="button">
@@ -147,7 +171,7 @@
                 </div>
 
                 <h5>
-                  Pass Plus
+                  Instructors
                 </h5>
 
                 <div class="button">
@@ -273,7 +297,7 @@ section.request {
 
         .button {
           width: 160px;
-          height: 35px;
+          height: 34px;
           border-radius: 20px;
           color: white;
           background-color: #49963f;
@@ -290,7 +314,7 @@ section.request {
 }
 // / SECTION REQUEST
 
-// SECTION COURSES
+// SECTION COMMERCIAL
 section.commercial {
   width: 100%;
   height: 500px;
@@ -331,6 +355,51 @@ section.commercial {
         background-color: white;
         position: relative;
         bottom: 5%;
+
+        .triangle {
+          width: 0;
+          height: 0;
+          border-top: 65px solid $darklightgreen;
+          border-right: 65px solid transparent;
+        }
+
+        h3 {
+          transform: rotate(-45deg);
+          position: absolute;
+          top: 10px;
+          left: 3px;
+          font-size: 13px;
+          color: white;
+        }
+
+        .all_info {
+          font-size: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h2 {
+            margin-top: -20px;
+            margin-bottom: 11px;
+          }
+
+          p {
+            padding: 0 25px 0 25px;
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 8px;
+          }
+
+          .button {
+            font-size: 10px;
+            padding: 5px 25px 5px 25px;
+            margin-top: 11px;
+            border-radius: 20px;
+            color: white;
+            background-color: $darklightgreen;
+          }
+        }
       }
 
       .learn_more {
@@ -374,5 +443,5 @@ section.commercial {
   }
 }
 
-// / SECTION COURSES
+// / SECTION COMMERCIAL
 </style>
