@@ -69,6 +69,7 @@
       <!-- SECTION COMMERCIAL  -->
       <section class="commercial">
 
+        <!-- COMMERCIAL TOP  -->
         <div class="commercial_top">
 
           <div class="commercial_top_wrap">
@@ -96,6 +97,7 @@
           </div>
 
         </div>
+        <!-- / COMMERCIAL TOP  -->
 
         <!-- COMMERCIAL BOTTOM  -->
         <div class="commercial_bottom">
@@ -136,6 +138,8 @@
 
                 <div class="item_square">
 
+                  <img src="./assets/images/courses-passplus-200x200.jpg" alt="courses passplus">
+
                 </div>
 
                 <h5>
@@ -152,6 +156,8 @@
 
                 <div class="item_square">
 
+                  <img src="./assets/images/course-intensive-200x200.jpg" alt="course intensive">
+
                 </div>
 
                 <h5>
@@ -167,6 +173,8 @@
               <div class="item">
 
                 <div class="item_square">
+
+                  <img src="./assets/images/courses-instructor-200x200.jpg" alt="courses instructor">
 
                 </div>
 
@@ -319,6 +327,8 @@ section.commercial {
   width: 100%;
   height: 500px;
   background-color: lawngreen;
+  background-image: url("./assets/images/horizontal-cta-background.jpg");
+  background-size: contain;
 
   .commercial_top {
     width: 100%;
@@ -328,10 +338,30 @@ section.commercial {
       width: 60%;
       height: 100%;
       margin: auto;
-      background-color: mediumblue;
+      // background-color: mediumblue;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .text_wrap h1 {
+        color: white;
+      }
+
+      .text_wrap p {
+        color: white;
+      }
+
+      .number i {
+        color: white;
+        margin-right: 30px;
+        font-size: 20px;
+      }
+
+      .number span {
+        color: white;
+        margin-right: 150px;
+        font-size: 20px;
+      }
     }
   }
 
@@ -339,12 +369,14 @@ section.commercial {
     width: 100%;
     height: 335px;
     background-color: mediumturquoise;
+    background-image: url("./assets/images/promise-background.jpg");
+    background-size: 95% 100%;
 
     .commercial_bottom_wrap {
       width: 60%;
       height: 100%;
       margin: auto;
-      background-color: mediumvioletred;
+      // background-color: mediumvioletred;
       display: flex;
       justify-content: space-between;
 
@@ -405,15 +437,15 @@ section.commercial {
       .learn_more {
         width: 65%;
         height: 100%;
-        background-color: peru;
+        // background-color: peru;
         display: flex;
 
         .item {
           width: 150px;
           height: 270px;
-          margin: 25px;
-          background-color: rgb(0, 255, 64);
-          border: 1px solid black;
+          margin: 50px 10px;
+          // background-color: rgb(0, 255, 64);
+          // border: 1px solid black;
           display: flex;
           flex-direction: column;
           // justify-content: center;
@@ -422,8 +454,13 @@ section.commercial {
           .item_square {
             width: 90%;
             height: 130px;
-            background-color: red;
-            border: 1px solid black;
+            // background-color: red;
+            // border: 1px solid black;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
 
           h5 {
