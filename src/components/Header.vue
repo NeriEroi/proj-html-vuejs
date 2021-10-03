@@ -55,11 +55,11 @@
     <div class="text_cont">
 
       <h1>
-        DRIVE WITH AVADA
+        Drive with Avada
       </h1>
 
       <p>
-        We offer the finest 
+        We offer the finest driving tuition money can buy
       </p>
 
     </div>
@@ -148,7 +148,7 @@ header {
   background-color: $headergray;
 
   .sub_header {
-    width: 75%;
+    width: 60%;
     height: 35px;
     margin: auto;
     display: flex;
@@ -170,8 +170,8 @@ header {
 
   #nav_line {
     width: 100%;
-    height: 487px;
-    background-image: url("../assets/images/driving_preview.jpg");
+    height: 600px;
+    background-image: url("../assets/images/homepage-hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -181,7 +181,7 @@ header {
       opacity: 0.7;
 
       nav {
-        width: 76%;
+        width: 62%;
         height: 130px;
         margin: auto;
         display: flex;
@@ -241,10 +241,10 @@ header {
 
   .text_cont {
     position: absolute;
-    left: 13%;
-    bottom: 14%;
+    left: 20%;
+    bottom: 30%;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .details_cont {
@@ -254,7 +254,7 @@ header {
     align-items: center;
     position: absolute;
     right: 0;
-    top: 27%;
+    top: 22%;
     z-index: 999;
 
     .demos_cont {

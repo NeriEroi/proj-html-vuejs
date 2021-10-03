@@ -368,7 +368,7 @@ section.commercial {
   .commercial_bottom {
     width: 100%;
     height: 335px;
-    background-color: mediumturquoise;
+    // background-color: mediumturquoise;
     background-image: url("./assets/images/promise-background.jpg");
     background-size: 95% 100%;
 
