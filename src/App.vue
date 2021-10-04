@@ -406,6 +406,14 @@
 
       </section>
       <!-- / STATS AND INSTRUCTORS  -->
+
+      <!-- TESTIMONIALS  -->
+      <section class="testimonials">
+
+
+
+      </section>
+      <!-- / TESTIMONIALS  -->
     </main>
 
     <Footer />
@@ -804,6 +812,7 @@ section.commercial {
 .stats_instructors .instructors_cont {
   width: 100%;
   height: 150px;
+  // margin-bottom: 50px;
   // background-color: yellowgreen;
 
   .instructors_wrap {
@@ -851,6 +860,8 @@ section.commercial {
     width: 60%;
     height: 100%;
     // background-color: chocolate;
+    position: relative;
+    bottom: -60px;
     margin: auto;
     display: flex;
 
@@ -860,7 +871,7 @@ section.commercial {
       // border: 1px solid black;
       border-radius: 10px;
       background: linear-gradient(to top, white 97%, #79b27b 3%);
-      box-shadow: 0px 10px #e7e4e4;
+      box-shadow: 5px 5px 5px 5px #a79e9e75;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -885,6 +896,7 @@ section.commercial {
       }
 
       .logos_cont .logos i {
+        margin-top: 10px;
         color: $gray;
       }
 
@@ -894,6 +906,7 @@ section.commercial {
       }
 
       p {
+        margin-top: 10px;
         text-align: center;
         font-size: 13px;
         color: $gray;
@@ -906,5 +919,18 @@ section.commercial {
     }
   }
 }
-// / STATS AND INSTRUCTORS  
+// / STATS AND INSTRUCTORS
+
+// TESTIMONIALS
+.testimonials {
+  width: 100%;
+  height: 550px;
+  background-image: url("./assets/images/testimonial-background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+// TESTIMONIALS
 </style>
