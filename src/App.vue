@@ -197,6 +197,86 @@
 
       </section>
       <!-- / SECTION COMMERCIAL  -->
+
+      <!-- STATS AND INSTRUCTORS  -->
+      <section class="stats_instructors">
+
+        <div class="down_arrow">
+
+          <img src="./assets/images/driving-triangle.svg" alt="driving triangle">
+
+        </div>
+
+        <div class="rate_cont">
+
+          <div class="rate_wrap">
+
+            <div class="item">
+
+              <div class="circle_cont">
+
+                <div class="circle_left">
+
+                  <span>95%</span>
+
+                </div>
+                
+              </div>
+
+              <div class="description_cont">
+
+                <span>PASS RATE</span>
+
+              </div>
+
+            </div>
+
+            <div class="item">
+
+              <div class="circle_cont">
+
+                <div class="circle">
+
+                  <span>100%</span>
+
+                </div>
+
+              </div>
+
+              <div class="description_cont">
+
+                <span>REFERRAL RATE</span>
+
+              </div>
+
+            </div>
+
+            <div class="item">
+
+              <div class="circle_cont">
+
+                <div class="circle_right">
+
+                  <span>0%</span>
+
+                </div>
+
+              </div>
+
+              <div class="description_cont">
+
+                <span>ACCIDENT RATE</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- / STATS AND INSTRUCTORS  -->
     </main>
 
     <Footer />
@@ -326,7 +406,7 @@ section.request {
 section.commercial {
   width: 100%;
   height: 500px;
-  background-color: lawngreen;
+  // background-color: lawngreen;
   background-image: url("./assets/images/horizontal-cta-background.jpg");
   background-size: contain;
 
@@ -370,7 +450,7 @@ section.commercial {
     height: 335px;
     // background-color: mediumturquoise;
     background-image: url("./assets/images/promise-background.jpg");
-    background-size: 95% 100%;
+    background-size: 100% 100%;
 
     .commercial_bottom_wrap {
       width: 60%;
@@ -479,6 +559,119 @@ section.commercial {
     }
   }
 }
-
 // / SECTION COMMERCIAL
+
+// STATS AND INSTRUCTORS
+.stats_instructors .down_arrow img {
+  width: 100%;
+  height: 100px;
+}
+
+.stats_instructors .rate_cont {
+  width: 100%;
+  height: 355px;
+  // background-color: chartreuse;
+
+  .rate_wrap {
+    width: 60%;
+    height: 100%;
+    // background-color: chocolate;
+    margin: auto;
+    margin-top: -100px;
+    display: flex;
+
+    .item {
+      width: 295px;
+      height: 300px;
+      // border: 1px solid black;
+      border-radius: 10px;
+      background: linear-gradient(to top, white 97%, #79b27b 3%);
+      box-shadow: 0px 10px #e7e4e4;
+
+      .circle_cont {
+        width: 100%;
+        height: 50%;
+        // background-color: darkorchid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .circle {
+          width: 130px;
+          height: 130px;
+          margin-top: 50px;
+          border-radius: 50%;
+          border-top: 0.4em solid $darklightgreen;
+          border-right: 0.4em solid $darklightgreen;
+          border-bottom: 0.4em solid $darklightgreen;
+          border-left: 0.4em solid $darklightgreen;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 25px;
+            color: $gray;
+          }
+        }
+
+        .circle_left {
+          width: 130px;
+          height: 130px;
+          margin-top: 50px;
+          border-radius: 50%;
+          border-top: 0.4em solid rgba(0, 0, 0, 0.2);
+          border-right: 0.4em solid $darklightgreen;
+          border-bottom: 0.4em solid $darklightgreen;
+          border-left: 0.4em solid $darklightgreen;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 25px;
+            color: $gray;
+          }
+        }
+
+        .circle_right {
+          width: 130px;
+          height: 130px;
+          margin-top: 50px;
+          border-radius: 50%;
+          border-top: 0.4em solid $darklightgreen;
+          border-right: 0.4em solid rgba(0, 0, 0, 0.2);
+          border-bottom: 0.4em solid rgba(0, 0, 0, 0.2);
+          border-left: 0.4em solid rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 25px;
+            color: $gray;
+          }
+        }
+      }
+
+      .description_cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          margin-top: 50px;
+          color: $gray;
+        }
+      }
+    }
+    
+    .item:nth-of-type(2) {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+// / STATS AND INSTRUCTORS  
 </style>
