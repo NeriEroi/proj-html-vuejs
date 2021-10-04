@@ -309,6 +309,101 @@
 
         </div>
 
+        <div class="photos_instructors_cont">
+
+          <div class="photos_instructors_wrap">
+
+            <div class="item">
+
+              <div class="photo_cont">
+
+                <img src="./assets/images/instructor-mikehart-200x127.jpg" alt="">
+                
+              </div>
+
+              <div class="description_cont">
+
+                <h3>Mike Hart</h3>
+
+                <div class="logos_cont">
+                  <div class="logos">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipisicing elit. 
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="item">
+
+              <div class="photo_cont">
+
+                <img src="./assets/images/instructor-johnsmith-200x127.jpg" alt="">
+                
+              </div>
+
+              <div class="description_cont">
+
+                <h3>John Smith</h3>
+
+                <div class="logos_cont">
+                  <div class="logos">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipisicing elit. 
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="item">
+
+              <div class="photo_cont">
+
+                <img src="./assets/images/instructor-angelahart-200x127.jpg" alt="">
+                
+              </div>
+
+              <div class="description_cont">
+
+                <h3>Angela Hart</h3>
+
+                <div class="logos_cont">
+                  <div class="logos">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipisicing elit. 
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
       <!-- / STATS AND INSTRUCTORS  -->
     </main>
@@ -740,11 +835,76 @@ section.commercial {
         
         p {
           color: white;
+          font-size: 13px;
         }
       }
     }
   }
 }
 
+.stats_instructors .photos_instructors_cont {
+  width: 100%;
+  height: 355px;
+  // background-color: chartreuse;
+
+  .photos_instructors_wrap {
+    width: 60%;
+    height: 100%;
+    // background-color: chocolate;
+    margin: auto;
+    display: flex;
+
+    .item {
+      width: 290px;
+      height: 340px;
+      // border: 1px solid black;
+      border-radius: 10px;
+      background: linear-gradient(to top, white 97%, #79b27b 3%);
+      box-shadow: 0px 10px #e7e4e4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .photo_cont {
+        width: 200px;
+        height: 127px;
+        margin-top: 25px;
+        // background-color: tomato;
+
+      }
+
+      .description_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h3 {
+        margin-top: 25px;
+        color: $footer;
+      }
+
+      .logos_cont .logos i {
+        color: $gray;
+      }
+
+      .logos_cont .logos i:nth-of-type(2) {
+        margin: 0 10px;
+        color: $gray;
+      }
+
+      p {
+        text-align: center;
+        font-size: 13px;
+        color: $gray;
+      }
+    }
+
+    .item:nth-of-type(2) {
+      margin: 0 auto;
+      height: 350px;
+    }
+  }
+}
 // / STATS AND INSTRUCTORS  
 </style>

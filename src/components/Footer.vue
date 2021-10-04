@@ -242,7 +242,7 @@ export default {
       padding: 5px 15px;
       margin-top: 30px;
       margin-bottom: -20px;
-      border-radius: 10px;
+      border-radius: 15px;
       background-color: $lightgreen;
       color: white;
       display: flex;
