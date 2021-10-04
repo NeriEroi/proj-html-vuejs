@@ -275,6 +275,40 @@
 
         </div>
 
+        <div class="instructors_cont">
+
+          <div class="instructors_wrap">
+
+            <div class="text_wrap">
+
+              <div>
+
+                <h1>
+                Your Instructors
+                </h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque voluptatem
+                  similique quos minima voluptates maxime velit 
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="button_wrap">
+
+              <div class="button">
+                <p>
+                  MORE ABOUT US
+                </p>
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+
       </section>
       <!-- / STATS AND INSTRUCTORS  -->
     </main>
@@ -665,13 +699,52 @@ section.commercial {
         }
       }
     }
-    
+
     .item:nth-of-type(2) {
       margin: 0 auto;
     }
   }
 }
 
+.stats_instructors .instructors_cont {
+  width: 100%;
+  height: 150px;
+  // background-color: yellowgreen;
+
+  .instructors_wrap {
+    width: 60%;
+    height: 100%;
+    // background-color: chocolate;
+    margin: auto;
+    display: flex;
+
+    .text_wrap {
+      width: 60%;
+      // background-color: tomato;
+      display: flex;
+      align-items: center;
+    }
+
+    .button_wrap {
+      width: 40%;
+      // background-color: yellow;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .button {
+        padding: 5px 80px;
+        background-color: $darklightgreen;
+        border-radius: 20px;
+        cursor: pointer;
+        
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
 
 // / STATS AND INSTRUCTORS  
 </style>
