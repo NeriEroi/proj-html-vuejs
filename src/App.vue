@@ -15,31 +15,8 @@
 
       <LatestNews />
 
-      
+      <NewsLetter />
 
-      <!-- NEWSLETTER  -->
-      <section class="newsletter">
-
-        <div class="newsletter_wrap">
-
-          <h1>
-            Sign up to our Newsletter
-          </h1>
-
-          <input type="text">
-
-          <div class="button">
-            SUBSCRIBE
-          </div>
-
-          <p>
-            (We do not share your data with anybody, and only use it for its intended purpose)
-          </p>
-
-        </div>
-
-      </section>
-      <!-- / NEWSLETTER  -->
     </main>
 
     <Footer />
@@ -54,6 +31,7 @@ import Commercial from './components/Commercial.vue'
 import StatsAndInstructors from './components/StatsAndInstructors.vue'
 import Testimonials from './components/Testimonials.vue'
 import LatestNews from './components/LatestNews.vue'
+import NewsLetter from './components/NewsLetter.vue'
 import Footer from './components/Footer.vue'
 
 
@@ -66,6 +44,7 @@ export default {
     StatsAndInstructors,
     Testimonials,
     LatestNews,
+    NewsLetter,
     Footer,
   }
 }
@@ -74,50 +53,4 @@ export default {
 <style lang="scss">
 @import "./style/generals";
 @import "./style/vars";
-
-// NEWSLETTER
-.newsletter {
-  width: 100%;
-  height: 350px;
-  background-image: url("./assets/images/newsletter_background.jpg");
-  background-size: cover;
-
-  .newsletter_wrap {
-    width: 60%;
-    height: 100%;
-    // background-color: tomato;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h1 {
-      margin-top: 35px;
-    }
-
-    input {
-      width: 550px;
-      padding: 20px;
-      margin-top: 35px;
-    }
-
-    .button {
-      width: 550px;
-      padding: 3px;
-      margin: 20px 0;
-      background-color: $lightgreen;
-      text-align: center;
-      border-radius: 20px;
-      color: white;
-      cursor: pointer;
-    }
-
-    p {
-      font-size: 13px;
-      color: $gray;
-    }
-  }
-}
-
-// / NEWSLETTER
 </style>
