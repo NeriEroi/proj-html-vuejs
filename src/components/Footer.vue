@@ -142,19 +142,15 @@ export default {
         ],
         courses: [
           {
-            icon: "far fa-arrow-alt-circle-right",
             text: "Pass Plus"
           },
           {
-            icon: "far fa-arrow-alt-circle-right",
             text: "Intensive Course"
           },
           {
-            icon: "far fa-arrow-alt-circle-right",
             text: "Automatic"
           },
           {
-            icon: "far fa-arrow-alt-circle-right",
             text: "Instructor Training"
           },
         ]
