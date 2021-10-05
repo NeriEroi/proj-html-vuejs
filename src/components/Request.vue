@@ -63,38 +63,8 @@
 
 <script>
 export default {
-    name: 'Request',
-    data() {
-      return {
-        headerLinks: [
-          {
-            text: "HOME",
-            status: false,
-          },
-          {
-            text: "ABOUT",
-            status: false
-          },
-          {
-            text: "PRICES",
-            status: false
-          },
-          {
-            text: "COURSES",
-            status: true
-          },
-          {
-            text: "LOCATIONS",
-            status: false
-          },
-          {
-            text: "BLOG",
-            status: false
-          },
-        ]
-      }
-    }
-  }
+  name: 'Request',
+}
 </script>
 
 <style scoped lang="scss">
